@@ -1,0 +1,97 @@
+/* styles.css (or your stylesheet of choice) */
+.custom-container {
+    width: 100%;
+    height: 550px;
+    color: white; /* Adjust the text color as needed */
+  }
+  
+  .banner-container{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .banner-image{
+    width: 100%; 
+    height: 90vh;
+    object-fit: cover;
+   
+    
+  }
+  /* styles.css */
+.my-custom-class {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(to right, black, transparent); /* Use your gradient colors */
+}
+/* styles.css (or your stylesheet of choice) */
+.white-text {
+  color: white;
+}
+
+/* custom.css */
+/* Play button */
+.play-button {
+  background-color: #E5E7EB; /* Gray background */
+  color: #000; /* Black text */
+  border: 1px solid #D1D5DB; /* Gray border */
+  padding: 0.5rem 1rem; /* Padding */
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* Watch Later button */
+.watch-later-button {
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White text */
+  border: 1px solid #D1D5DB; /* Gray border */
+  padding: 0.5rem 1rem; /* Padding */
+  cursor: pointer;
+  margin-left: 0.5rem; /* Margin between buttons */
+  opacity: 0.9;
+}
+/* styles.css */
+.my-custom-div {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .my-custom-div {
+    padding: 2rem;
+ 
+  }
+}
+@media (min-width: 568px) {
+  .my-custom-div {
+    padding: 2rem;
+   
+  }
+}
+
+.container-action{
+  margin-top: 1rem/* 16px */;
+  margin-bottom: 1rem/* 16px */;
+}
+
+/* styles.css */
+.movie-overview {
+  width: 100%;
+  max-width: 90%; /* On medium screens */
+  text-align: left; /* Center the text */
+  color: #E5E7EB; /* Gray text color */
+}
+
+@media (min-width: 768px) {
+  .movie-overview {
+    max-width: 50%; /* On large screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-overview {
+    max-width: 35%; /* On extra-large screens */
+  }
+}

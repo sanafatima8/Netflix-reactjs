@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans);
+
+body{
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  max-width: 90%;
+left: 2px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2rem; /* Adjust the margin for both sides */
+  padding: 1rem;
+  z-index: 2; /* Ensure the Navbar is on top */
+  background-color: transparent; /* Transparent background */
+}
+
+
+.custom-text-color {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1; 
+  margin-right: auto;
+  text-decoration: none;
+
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.custom-button {
+  background-color: red;
+  border-style: none;
+  margin-left: 1rem; /* Adjust the margin as needed */
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: red;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+
+
+
+.c-btn {
+  color: white; /* Text color (assuming you want white text) */
+  background: rgba(0, 0, 0, 0); /* Transparent background (RGBA: Red, Green, Blue, Alpha) */
+  border: none; /* Optional: Add a white border for better visibility */
+  /* z-index: 1; Ensure the Navbar buttons are on top */
+  cursor: pointer;
+  
+  
+}
+
+
+
+
+.custom-div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 1;
+}
+
+
+
+
+/* @media screen and (max-width: 568px) {
+  .custom-button {
+    left: 2rem; 
+  }
+}
+@media screen and (max-width: 768px) {
+  .custom-button {
+    left: 5rem; 
+  }
+} */

@@ -1,0 +1,329 @@
+/* Row.css */
+
+.SubHeading {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  
+   
+  
+  }
+  
+ 
+  
+  /* .SubHead {
+    position: relative;
+    display: flex;
+    align-items: center; 
+  
+   
+
+} */
+
+  @media (min-width: 768px) {
+    /* .SubHeading {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 1rem;
+     padding-top: 30rem;
+    
+    } */
+  }
+  @media (min-width: 568px) {
+    .my-custom-div {
+      padding: 2rem;
+     
+     
+    }
+  
+    /* .SubHeading {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 1rem;
+      max-height: fit-content;
+ 
+    margin-top: 10px;
+   
+    } */
+  }
+  
+
+  /* CustomCard.css */
+
+.custom-card {
+  width: 160px; /* Default width */
+  padding: 2px; /* Default padding */
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  
+ 
+}
+.movie-img{
+  max-width: 225px;
+  margin-right: 10px;
+
+  width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 640px) {
+  .movie-img{
+    max-width: 225px;
+    
+  }
+  .custom-card {
+      width: 221px; /* Adjust width for small screens and up */
+      margin-right: 10px; /* Adjust the right margin as needed to create space between cards */
+
+    } 
+
+}
+
+@media (min-width: 768px) {
+  .movie-img{
+    max-width: 225px;
+  }
+  .custom-card {
+      width: 280px; /* Adjust width for medium screens and up */
+      margin-right: 10px; /* Adjust the right margin as needed to create space between cards */
+
+    }
+}
+
+@media (min-width: 1024px) {
+  .movie-img{
+    max-width: 318px;
+    margin-right: 10px;
+  }
+  .custom-card {
+      width: 300px; /* Adjust width for large screens and up */
+      margin-right: 27px; /* Adjust the right margin as needed to create space between cards */
+
+    }
+
+}
+
+
+
+/* HoverOverlay.css */
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 173px;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with 80% opacity */
+  opacity: 0;
+  color: white;
+
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+}
+
+.hover-overlay:hover {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+
+/* TitleText.css */
+
+.title-text {
+  white-space: normal;
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  color: white;
+}
+
+/* LikeIcon.css */
+
+.like-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  color: #ccc; /* Adjust the color as needed */
+}
+
+/* Slider.css */
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden; 
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+.slider-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+/* chevron-styles.css */
+.chevron-container {
+  background-color: white;
+  right: 0;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+
+.chevron-container:hover {
+  opacity: 1;
+}
+
+.group-hover\:block:hover .chevron-container {
+  display: block;
+}
+
+
+/* slide-left-styles.css */
+.slideleft {
+  background-color: white;
+  left: 0;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+  opacity: 50px;
+
+
+}
+
+.slideleft:hover {
+  opacity: 100;
+}
+
+.group-hover\:block:hover .slideleft {
+  display: block;
+ 
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+
+
+/* slide-Right-styles.css */
+.slideRight {
+  background-color: white;
+  right: 0;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
+  opacity: 50px;
+
+
+}
+
+.slideRight:hover {
+  opacity: 100;
+}
+
+.group-hover\:block:hover .slideRight {
+  display: block;
+ 
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+
+
+/* right left correct arrow  */
+
+
+
+
+.group {
+  position: relative;
+}
+
+.slideleft,
+.slideRight {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover .slideleft,
+.group:hover .slideRight {
+  display: block;
+}
+
+.slideleft:hover,
+.slideRight:hover {
+  opacity: 1;
+}
+
+
+
+/* // saved shows // */
+.SavedHeading{
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem; /* Adjust the font size as needed */
+ 
+  
+
+}
+.close-icon{
+position: absolute;
+right: 1rem;
+top: 1rem;
+
+}
+
+
+  @media (min-width: 640px) {
+   
+.close-icon{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  
+  }
+  }
+  
+  @media (min-width: 768px) {
+   
+    .close-icon{
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      
+      }
+      }
+      
